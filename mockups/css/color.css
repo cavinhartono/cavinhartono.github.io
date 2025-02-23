@@ -1,0 +1,7 @@
+:root {
+  --background-body: linear-gradient(to bottom, hsl(0, 0%, 100%) 0%, hsl(214, 47%, 97%) 35%, hsl(215, 46%, 93%) 100%);
+}
+
+body {
+  background: var(--background-body);
+}
