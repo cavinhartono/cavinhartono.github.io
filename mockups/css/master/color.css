@@ -1,0 +1,31 @@
+:root {
+  --background-body: linear-gradient(to bottom, hsl(0, 0%, 100%) 0%, hsl(214, 47%, 97%) 35%, hsl(215, 46%, 93%) 100%);
+
+  --white-50: #fafafa;
+  --white-100: #efefef;
+  --white-200: #dcdcdc;
+  --white-300: #bdbdbd;
+  --white-400: #989898;
+  --white-500: #7c7c7c;
+  --white-600: #656565;
+  --white-700: #525252;
+  --white-800: #464646;
+  --white-900: #3d3d3d;
+  --white-950: #292929;
+
+  --red-50: #fcf5f4;
+  --red-100: #f8edeb;
+  --red-200: #f2dbd9;
+  --red-300: #e7beba;
+  --red-400: #d99893;
+  --red-500: #c7716c;
+  --red-600: #a94a4a;
+  --red-700: #943c3f;
+  --red-800: #7c3539;
+  --red-900: #6b3035;
+  --red-950: #3a1719;
+}
+
+body {
+  background: var(--white-100);
+}
