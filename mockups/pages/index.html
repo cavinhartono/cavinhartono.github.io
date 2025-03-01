@@ -3,20 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>This My Personal - Cavin Hartono</title>
+    <title>Cavin Hartono | Student of Computer Science</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Monomakh&family=Montserrat:ital,wght@0,500;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body style="font-family: 'Montserrat', sans-serif">
-    <h1 style="font-weight: 300; line-height: 2.75rem">
-      I'm <span class="serif" style="font-weight: 700">Cavin Hartono</span>, an
-      Student of the Computer Science with interest in Software Engineering, AI
-      and efficent Computing System.
-    </h1>
+  <body>
+    <main class="container">
+      <header class="header">
+        <div class="toggle-container">
+          <label class="toggle-switch">
+            <input type="checkbox" id="darkModeToggle" />
+            <span class="slider"></span>
+          </label>
+          <ion-icon name="moon"></ion-icon>
+        </div>
+        <nav>
+          <a href="?page=home" onclick="navigate(event, 'home')" id="nav-home">
+            Home
+          </a>
+          <a
+            href="?page=portfolio"
+            onclick="navigate(event, 'portfolio')"
+            id="nav-portfolio"
+          >
+            Portfolio
+          </a>
+          <a href="?page=lr" onclick="navigate(event, 'lr')" id="nav-lr">
+            Notes
+          </a>
+        </nav>
+      </header>
+      <ul class="social_media">
+        <li class="list">
+          <a class="link" href="https://www.linkedin.com/in/cavinhartono/">
+            <span class="icon">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </span>
+          </a>
+        </li>
+        <li class="list">
+          <a class="link" href="https://www.github.com/cavinhartono/">
+            <span class="icon">
+              <ion-icon name="logo-github"></ion-icon>
+            </span>
+          </a>
+        </li>
+        <li class="list">
+          <a class="link" href="https://codepen.io/cavinhartono/pens/">
+            <span class="icon">
+              <ion-icon name="logo-codepen"></ion-icon>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <div id="content">
+        <section id="home">
+          <h1 class="title">
+            <span class="serif">
+              A Student of the Computer Science with a keen interest in Software
+              Engineering, Machine Learning and Web Application.
+            </span>
+          </h1>
+        </section>
+        <section id="portfolio" class="hidden">
+          <h2>About Page</h2>
+          <p>Learn more about us here.</p>
+        </section>
+        <section id="lr" class="hidden">
+          <h2>Contact Page</h2>
+          <p>Get in touch with us.</p>
+        </section>
+      </div>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+      <script>
+        function navigate(event, page) {
+          event.preventDefault();
+          const url = new URL(window.location);
+          url.searchParams.set("page", page);
+          window.history.pushState({}, "", url);
+          showPage(page);
+        }
+
+        function showPage(page) {
+          document
+            .querySelectorAll("section")
+            .forEach((sec) => sec.classList.toggle("hidden", sec.id !== page));
+          document
+            .querySelectorAll("nav a")
+            .forEach((link) => link.classList.remove("active"));
+          document.getElementById(`nav-${page}`).classList.add("active");
+        }
+
+        window.addEventListener("popstate", () =>
+          showPage(new URL(window.location).searchParams.get("page") || "home")
+        );
+
+        document
+          .getElementById("darkModeToggle")
+          .addEventListener("change", function () {
+            document.body.classList.toggle("dark-mode", this.checked);
+            localStorage.setItem(
+              "darkMode",
+              this.checked ? "enabled" : "disabled"
+            );
+          });
+
+        window.onload = () => {
+          const page =
+            new URL(window.location).searchParams.get("page") || "home";
+          showPage(page);
+          const darkMode = localStorage.getItem("darkMode") === "enabled";
+          document.body.classList.toggle("dark-mode", darkMode);
+          document.getElementById("darkModeToggle").checked = darkMode;
+        };
+      </script>
+    </main>
   </body>
 </html>

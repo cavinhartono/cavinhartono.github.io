@@ -5,4 +5,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 4.25rem;
+}
+
+h3 {
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 700;
 }
