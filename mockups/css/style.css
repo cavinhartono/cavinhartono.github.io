@@ -46,6 +46,25 @@ nav a.active {
   opacity: 1;
 }
 
+.home {
+  margin: 150px 0;
+}
+
+.action {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action p {
+  width: 75%;
+  line-height: 2.75rem;
+  text-align: justify;
+  opacity: 0.75;
+}
+
 .social_media {
   position: fixed;
   bottom: 0;
