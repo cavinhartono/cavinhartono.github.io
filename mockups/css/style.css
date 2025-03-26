@@ -1,8 +1,7 @@
 @import 'master.css';
 
 body {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", sans-serif;
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   transition: background 0.3s, color 0.3s;
   background: var(--white-50);
   color: var(--white-950);
@@ -22,6 +21,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
+  z-index: 999;
 }
 
 .header.active {
@@ -38,12 +39,17 @@ nav {
 nav a {
   color: var(--white-950);
   cursor: pointer;
+  font-weight: 600;
   opacity: 0.75;
   transition: opacity 0.3s;
 }
 
 nav a.active {
   opacity: 1;
+}
+
+.content {
+  height: 100%;
 }
 
 .home {
@@ -62,7 +68,6 @@ nav a.active {
   width: 75%;
   line-height: 2.75rem;
   text-align: justify;
-  opacity: 0.75;
 }
 
 .social_media {
