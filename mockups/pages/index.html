@@ -96,7 +96,6 @@
           <p>Get in touch with us.</p>
         </section>
       </div>
-
       <script
         type="module"
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -106,6 +105,14 @@
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
       ></script>
       <script>
+        const header = document.querySelector(".header");
+
+        function scroller() {
+          return this.scrollY >= 200
+            ? header.classList.add("active")
+            : header.classList.remove("active");
+        }
+
         function navigate(event, page) {
           event.preventDefault();
           const url = new URL(window.location);
@@ -123,6 +130,8 @@
             .forEach((link) => link.classList.remove("active"));
           document.getElementById(`nav-${page}`).classList.add("active");
         }
+
+        window.addEventListener("scroll", scroller);
 
         window.addEventListener("popstate", () =>
           showPage(new URL(window.location).searchParams.get("page") || "home")
