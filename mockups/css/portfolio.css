@@ -1,0 +1,86 @@
+.projects {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.projects .list {
+  max-width: 325px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  transition: 1s;
+  box-shadow: none;
+}
+
+.projects .list:hover {
+  box-shadow: rgba(34, 34, 34, 0.4) 0px 0px 0px 2px, rgba(34, 34, 34, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.projects .imageBx {
+  position: relative;
+}
+
+.projects .imageBx .btn {
+  position: absolute;
+  bottom: -24px;
+  right: 16px;
+}
+
+.projects .detailBx {
+  margin: 16px 0;
+}
+
+.projects .imageBx ion-icon {
+  font-size: 24px;
+}
+
+.projects .actionBx {
+  display: flex;
+}
+
+.projects .actionBx .list:hover {
+  box-shadow: none;
+}
+
+.projects .actionBx ion-icon {
+  color: var(--white-950);
+}
+
+.projects .detailBx .subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.projects .detailBx .subtitle::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 0;
+  height: 2px;
+  background: var(--white-950);
+  animation: expandWidth 2s forwards;
+}
+
+.projects .detailBx .text {
+  font-size: 1rem;
+  margin: 8px 0 16px;
+}
+
+.projects img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 32px;
+  }
+}

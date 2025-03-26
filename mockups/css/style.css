@@ -1,4 +1,5 @@
 @import 'master.css';
+@import "portfolio.css";
 
 body {
   font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
