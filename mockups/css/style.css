@@ -57,6 +57,34 @@ nav a.active {
   margin: 150px 0;
 }
 
+.about {
+  height: 100vh;
+}
+
+.about .text {
+  text-align: justify;
+  margin: 24px 0;
+  line-height: 2.5rem;
+  font-size: 24px;
+}
+
+.about_detail .title {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.about_detail .title::after {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 0;
+  height: 2px;
+  background: var(--white-950);
+  animation: expandWidth 2s forwards;
+}
+
 .action {
   margin: 100px 0;
   width: 100%;

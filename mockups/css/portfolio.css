@@ -9,14 +9,14 @@
 
 .projects .list {
   max-width: 325px;
-  padding: 8px 24px;
+  padding: 32px 24px;
   border-radius: 8px;
   transition: 1s;
   box-shadow: none;
 }
 
 .projects .list:hover {
-  box-shadow: rgba(34, 34, 34, 0.4) 0px 0px 0px 2px, rgba(34, 34, 34, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: var(--boxShadow-secondary);
 }
 
 .projects .imageBx {
@@ -27,14 +27,33 @@
   position: absolute;
   bottom: -24px;
   right: 16px;
+  padding: 16px;
+}
+
+.projects .imageBx .btn .label {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  overflow: hidden;
+}
+
+.projects .imageBx .btn:hover .label {
+  opacity: 1;
+  display: inline-flex;
 }
 
 .projects .detailBx {
   margin: 16px 0;
 }
 
+.projects .detailBx .title {
+  font-weight: 800;
+  margin: 8px 0;
+}
+
 .projects .imageBx ion-icon {
   font-size: 24px;
+  transform: rotate(-45deg);
 }
 
 .projects .actionBx {
@@ -53,6 +72,10 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.projects .detailBx .subtitle {
+  width: 90px;
 }
 
 .projects .detailBx .subtitle::before {
@@ -81,6 +104,6 @@
   }
 
   to {
-    width: 32px;
+    width: 100%;
   }
 }
