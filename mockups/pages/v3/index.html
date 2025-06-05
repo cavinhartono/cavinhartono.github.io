@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/v3/style.css" />
+    <link rel="stylesheet" href="../../css/v3/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Cavin Hartono - My Portfolio Web</title>
     <style>
-      body {
-        font-family: "Inter Tight", sans-serif;
-      }
-
       .serif {
         font-family: "NeverMind Serif", serif;
         font-weight: 700;
@@ -29,7 +32,7 @@
           <a href="#" class="link"><ion-icon name="book-outline"></ion-icon></a>
         </nav>
         <div class="action">
-          <button type="button" class="link">
+          <button type="menu" id="nightmode" class="link">
             <ion-icon name="moon-outline"></ion-icon>
           </button>
           <a href="#" class="btn primary">
@@ -43,7 +46,7 @@
           <ul class="available">
             <li class="list">Software Engineering</li>
             <li class="list">
-              <a href="#" class="btn success">Ready for Work</a>
+              <a href="#" class="btn success"><span>Ready for Work</span></a>
             </li>
           </ul>
           <div class="content">
@@ -81,10 +84,130 @@
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
           </div>
+          <ul class="content">
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/29/600/400" />
+                </figure>
+                <figcaption class="detail">
+                  <h3 class="title">Mobile Banking</h3>
+                  <p class="subtitle">
+                    Diagrams and implementation CLI using Java 17
+                  </p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/28/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h3 class="title">E-Learning Driving School</h3>
+                  <p class="subtitle">Website using PHP 8</p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/33/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h3 class="title">Shop Landing Page</h3>
+                  <p class="subtitle">AngularJS and TailwindCSS 4</p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/25/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h3 class="title">20 Components of JavaScript</h3>
+                  <p class="subtitle">Vanilia JavaScript</p>
+                </figcaption>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="posts">
+          <div class="action">
+            <h2 class="title">Recent Posts</h2>
+            <a href="#" class="btn">
+              View All
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <ul class="content">
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/55/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h2 class="title">
+                    Kenapa Umat Manusia Begitu Takut dengan AI?
+                  </h2>
+                  <p class="subtitle">Opini</p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/67/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h2 class="title">
+                    Seberapa Sulitnya Mengolah Citra dalam Dunia Medis
+                  </h2>
+                  <p class="subtitle">Kuliah</p>
+                </figcaption>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="link">
+                <figure class="image">
+                  <img src="https://picsum.photos/id/66/1280/720" />
+                </figure>
+                <figcaption class="detail">
+                  <h2 class="title">Selamat Datang!</h2>
+                  <p class="subtitle">Opini</p>
+                </figcaption>
+              </a>
+            </li>
+          </ul>
         </div>
         <footer class="footer" style="text-align: center; font-size: 0.75rem">
-          &COPY; 2025 &HorizontalLine;
-          <a href="https://www.github.com/cavinhartono"><u>Cavin Hartono</u></a>
+          <p class="text">
+            &COPY; 2025 &HorizontalLine;
+            <a href="https://www.github.com/cavinhartono">Cavin Hartono</a>
+          </p>
+          <ul class="socmed">
+            <li class="list">
+              <a href="https://www.glints.com/cavinhartono" class="link">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://www.linkedin.com/cavinhartono" class="link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://www.github.com/cavinhartono" class="link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://www.instagram.com/kevinnhartono" class="link">
+                <!-- Icon -->
+              </a>
+            </li>
+          </ul>
         </footer>
       </div>
     </main>
