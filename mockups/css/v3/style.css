@@ -72,12 +72,13 @@ button {
 
 .header {
   position: sticky;
-  top: 0;
+  top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 16px;
+  transition: 0.3s;
   background: #fff;
   box-shadow: var(--boxShadow-primary);
   border-radius: 16px;
@@ -232,16 +233,25 @@ button {
 .photo {
   width: 175px;
   height: 175px;
-  /* background: rgb(144, 18, 202); */
   background: #06b5f1;
   border: 6px solid #dff4ff;
   border-radius: 100%;
+  transition: 1s;
   box-shadow: var(--boxShadow-primary);
   overflow: hidden;
 }
 
+.photo:hover {
+  background: #3a15df;
+}
+
+.photo:hover img {
+  scale: 1.05;
+}
+
 .photo img {
   height: 100%;
+  transition: 0.5s;
 }
 
 .btn {

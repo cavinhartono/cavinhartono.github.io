@@ -1,0 +1,43 @@
+@import 'style.css';
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 8px 16px;
+  }
+
+  .homepage {
+    .available {
+      .list:nth-last-child(1) a span {
+        display: none;
+      }
+    }
+
+    .content {
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 24px;
+
+      .detail {
+        text-align: center;
+
+        .action {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .projects {
+    .image {
+      height: 245px;
+    }
+
+    .detail {
+      .subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
