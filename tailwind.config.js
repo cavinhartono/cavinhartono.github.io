@@ -1,0 +1,72 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        white: {
+          50: "#fafafa",
+          100: "#efefef",
+          200: "#dcdcdc",
+          300: "#bdbdbd",
+          400: "#989898",
+          500: "#7c7c7c",
+          600: "#656565",
+          700: "#525252",
+          800: "#464646",
+          900: "#3d3d3d",
+          950: "#292929",
+        },
+        olivine: {
+          50: "#f6f9f4",
+          100: "#ebf2e6",
+          200: "#d7e5cd",
+          300: "#b6cfa6",
+          400: "#9ebc8a",
+          500: "#6d9453",
+          600: "#577841",
+          700: "#466035",
+          800: "#3a4d2e",
+          900: "#304027",
+          950: "#172211",
+        },
+        blue: {
+          50: "#EBF3FE",
+          100: "#D8E6FD",
+          200: "#B1CEFB",
+          300: "#8AB5FA",
+          400: "#639CF8",
+          500: "#3B82F6",
+          600: "#0B60EA",
+          700: "#0848B0",
+          800: "#053075",
+          900: "#03183B",
+          950: "#010C1D",
+        },
+        red: {
+          50: "#fcf5f4",
+          100: "#f8edeb",
+          200: "#f2dbd9",
+          300: "#e7beba",
+          400: "#d99893",
+          500: "#c7716c",
+          600: "#a94a4a",
+          700: "#943c3f",
+          800: "#7c3539",
+          900: "#6b3035",
+          950: "#3a1719",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
