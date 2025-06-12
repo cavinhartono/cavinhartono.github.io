@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+.font-sans {
+  font-family: "Inter Tight", ui-sans-serif, system-ui, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+}
+
+@layer utilities {
+  .shadow-for-button {
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+      rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  }
+
+  .transition-bg-smooth {
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  }
+
+  .boxShadow-primary {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+}
