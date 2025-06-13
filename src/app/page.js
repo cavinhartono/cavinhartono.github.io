@@ -7,9 +7,9 @@ import Projects from "@/components/ProjectList";
 export default function HomePage() {
   return (
     <>
-      <main className="max-w-2xl bg-white-50 mx-auto p-4 min-h-screen">
+      <main className="max-w-2xl mx-auto p-4 min-h-screen">
         <Navbar />
-        <div className="rounded-2xl boxShadow-primary">
+        <div className="rounded-3xl my-4 bg-white-50 boxShadow-primary">
           <HeroSection />
           <Projects />
         </div>

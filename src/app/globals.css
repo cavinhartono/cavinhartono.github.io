@@ -2,6 +2,56 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
+@theme {
+  --color-white-50: #fafafa;
+  --color-white-100: #efefef;
+  --color-white-200: #dcdcdc;
+  --color-white-300: #bdbdbd;
+  --color-white-400: #989898;
+  --color-white-500: #7c7c7c;
+  --color-white-600: #656565;
+  --color-white-700: #525252;
+  --color-white-800: #464646;
+  --color-white-900: #3d3d3d;
+  --color-white-950: #292929;
+
+  --color-green-50: #f6f9f4;
+  --color-green-100: #ebf2e6;
+  --color-green-200: #d7e5cd;
+  --color-green-300: #b6cfa6;
+  --color-green-400: #9ebc8a;
+  --color-green-500: #6d9453;
+  --color-green-600: #577841;
+  --color-green-700: #466035;
+  --color-green-800: #3a4d2e;
+  --color-green-900: #304027;
+  --color-green-950: #172211;
+
+  --color-red-50: #fcf5f4;
+  --color-red-100: #f8edeb;
+  --color-red-200: #f2dbd9;
+  --color-red-300: #e7beba;
+  --color-red-400: #d99893;
+  --color-red-500: #c7716c;
+  --color-red-600: #a94a4a;
+  --color-red-700: #943c3f;
+  --color-red-800: #7c3539;
+  --color-red-900: #6b3035;
+  --color-red-950: #3a1719;
+
+  --color-blue-50: #f1f5fd;
+  --color-blue-100: #dfe8fa;
+  --color-blue-200: #c7d7f6;
+  --color-blue-300: #a1beef;
+  --color-blue-400: #749be6;
+  --color-blue-500: #5379de;
+  --color-blue-600: #3e5cd2;
+  --color-blue-700: #354ac0;
+  --color-blue-800: #313f9c;
+  --color-blue-900: #2c387c;
+  --color-blue-950: #1f244c;
+}
+
 .font-sans {
   font-family: "Inter Tight", ui-sans-serif, system-ui, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;

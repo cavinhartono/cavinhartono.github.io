@@ -26,12 +26,12 @@ const projects = [
 
 export default function ProjectList() {
   return (
-    <section className="my-8 p-6">
+    <section className="mt-2 p-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl">Recent Projects</h1>
+        <h1 className="text-2xl text-white-700">Recent Projects</h1>
         <a
           href="#"
-          className="flex items-center gap-2 border border-white-950 bg-[#FAFBFC] hover:bg-[#F3F4F6] hover:duration-300 shadow-for-button transition-bg-smooth text-white-950 px-3 py-1 rounded-md font-semibold"
+          className="flex items-center gap-2 border border-white-950 bg-white-200 hover:bg-white-300 active:bg-white-300 hover:duration-300 shadow-for-button transition-bg-smooth text-white-950 px-3 py-1 rounded-md font-semibold text-lg"
         >
           View All <Arrow className="w-4 h-4 fill-white-950" />
         </a>
