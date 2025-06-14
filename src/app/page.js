@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/ProjectList";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
         <div className="rounded-3xl my-4 bg-white-50 boxShadow-primary">
           <HeroSection />
           <Projects />
+          <Footer />
         </div>
       </main>
     </>

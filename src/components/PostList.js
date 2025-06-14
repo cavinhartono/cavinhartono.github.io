@@ -1,5 +1,4 @@
 import React from "react";
-import Arrow from "../../public/icons/arrow.svg";
 
 const projects = [
   {
@@ -20,15 +19,15 @@ const projects = [
   {
     title: "20 Components of JavaScript",
     subtitle: "Vanilla JavaScript",
-    img: "https://d1le3ohiuslpz1.cloudfront.net/skillcrush/wp-content/uploads/2021/08/JS-Projects.png",
+    img: "https://picsum.photos/id/25/1280/720",
   },
 ];
 
-export default function ProjectList() {
+export default function PostList() {
   return (
     <section className="mt-2 p-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl text-white-700">Recent Projects</h1>
+        <h1 className="text-2xl text-white-700">Recent Posts</h1>
         <a
           href="#"
           className="flex items-center gap-2 border border-white-950 bg-white-200 hover:bg-white-300 active:bg-white-300 hover:duration-300 shadow-for-button transition-bg-smooth text-white-950 px-3 py-1 rounded-md font-semibold text-lg"
@@ -37,7 +36,7 @@ export default function ProjectList() {
         </a>
       </div>
       <ul className="flex flex-col gap-6 mt-6">
-        {projects.slice(0, 4).map((project, idx) => (
+        {projects.slice(0, 3).map((project, idx) => (
           <li
             key={idx}
             className="rounded-xl boxShadow-primary hover:brightness-75 transition overflow-hidden"
