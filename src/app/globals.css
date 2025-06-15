@@ -3,53 +3,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 @theme {
-  --color-white-50: #fafafa;
-  --color-white-100: #efefef;
-  --color-white-200: #dcdcdc;
-  --color-white-300: #bdbdbd;
-  --color-white-400: #989898;
-  --color-white-500: #7c7c7c;
-  --color-white-600: #656565;
-  --color-white-700: #525252;
-  --color-white-800: #464646;
-  --color-white-900: #3d3d3d;
-  --color-white-950: #292929;
+  --color-white-50: oklch(99.13% 0 0);
+  --color-white-100: oklch(96.68% 0.002 282.22);
+  --color-white-200: oklch(89.78% 0.007 282.11);
+  --color-white-300: oklch(77.68% 0.015 282.06);
+  --color-white-400: oklch(63.97% 0.025 281.83);
+  --color-white-500: oklch(54.25% 0.03 281.8);
+  --color-white-600: oklch(47.15% 0.033 281.92);
+  --color-white-700: oklch(40.62% 0.032 281.65);
+  --color-white-800: oklch(37.06% 0.03 281.94);
+  --color-white-900: oklch(34.28% 0.028 282.1);
+  --color-white-950: oklch(26.46% 0.021 282.14);
 
-  --color-green-50: #f6f9f4;
-  --color-green-100: #ebf2e6;
-  --color-green-200: #d7e5cd;
-  --color-green-300: #b6cfa6;
-  --color-green-400: #9ebc8a;
-  --color-green-500: #6d9453;
-  --color-green-600: #577841;
-  --color-green-700: #466035;
-  --color-green-800: #3a4d2e;
-  --color-green-900: #304027;
-  --color-green-950: #172211;
+  --color-green-50: oklch(97.78% 0.006 142.67);
+  --color-green-100: oklch(95.06% 0.011 142.93);
+  --color-green-200: oklch(89.61% 0.022 142.54);
+  --color-green-300: oklch(78.52% 0.043 142.42);
+  --color-green-400: oklch(70.21% 0.053 142.36);
+  --color-green-500: oklch(54.85% 0.072 142.87);
+  --color-green-600: oklch(47.3% 0.068 142.77);
+  --color-green-700: oklch(40.89% 0.058 142.71);
+  --color-green-800: oklch(35.77% 0.046 142.51);
+  --color-green-900: oklch(31.57% 0.037 142.46);
+  --color-green-950: oklch(18.4% 0.018 141.61);
 
-  --color-red-50: #fcf5f4;
-  --color-red-100: #f8edeb;
-  --color-red-200: #f2dbd9;
-  --color-red-300: #e7beba;
-  --color-red-400: #d99893;
-  --color-red-500: #c7716c;
-  --color-red-600: #a94a4a;
-  --color-red-700: #943c3f;
-  --color-red-800: #7c3539;
-  --color-red-900: #6b3035;
-  --color-red-950: #3a1719;
+  --color-red-50: oklch(97.82% 0.007 22.11);
+  --color-red-100: oklch(95.69% 0.014 22.44);
+  --color-red-200: oklch(90.98% 0.027 22.56);
+  --color-red-300: oklch(82.33% 0.053 22.62);
+  --color-red-400: oklch(70.6% 0.084 22.41);
+  --color-red-500: oklch(60.01% 0.101 24.03);
+  --color-red-600: oklch(48.52% 0.093 27.13);
+  --color-red-700: oklch(43.45% 0.084 27.92);
+  --color-red-800: oklch(37.54% 0.072 28.11);
+  --color-red-900: oklch(33.06% 0.063 28.35);
+  --color-red-950: oklch(19.16% 0.033 29.12);
 
-  --color-blue-50: #f1f5fd;
-  --color-blue-100: #dfe8fa;
-  --color-blue-200: #c7d7f6;
-  --color-blue-300: #a1beef;
-  --color-blue-400: #749be6;
-  --color-blue-500: #5379de;
-  --color-blue-600: #3e5cd2;
-  --color-blue-700: #354ac0;
-  --color-blue-800: #313f9c;
-  --color-blue-900: #2c387c;
-  --color-blue-950: #1f244c;
+  --color-blue-50: oklch(97.02% 0.01 259.55);
+  --color-blue-100: oklch(93.71% 0.02 259.47);
+  --color-blue-200: oklch(88.29% 0.036 259.64);
+  --color-blue-300: oklch(78.64% 0.061 259.51);
+  --color-blue-400: oklch(66.73% 0.091 259.5);
+  --color-blue-500: oklch(56.62% 0.103 259.42);
+  --color-blue-600: oklch(48.48% 0.099 259.4);
+  --color-blue-700: oklch(43.11% 0.091 259.29);
+  --color-blue-800: oklch(39.56% 0.082 259.14);
+  --color-blue-900: oklch(35.74% 0.071 259.07);
+  --color-blue-950: oklch(25.26% 0.05 259.07);
 }
 
 .font-sans {

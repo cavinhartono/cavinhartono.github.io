@@ -40,7 +40,7 @@ export default function ProjectList() {
         {projects.slice(0, 4).map((project, idx) => (
           <li
             key={idx}
-            className="rounded-xl boxShadow-primary hover:brightness-75 transition overflow-hidden"
+            className="rounded-xl boxShadow-primary bg-white-50 hover:bg-white-100 active:bg-white-200 hover:duration-300 hover:brightness-75 transition overflow-hidden"
           >
             <a href="#">
               <figure className="h-80">

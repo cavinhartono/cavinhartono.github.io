@@ -30,7 +30,7 @@ export default function PostList() {
         <h1 className="text-2xl text-white-700">Recent Posts</h1>
         <a
           href="#"
-          className="flex items-center gap-2 border border-white-950 bg-white-200 hover:bg-white-300 active:bg-white-300 hover:duration-300 shadow-for-button transition-bg-smooth text-white-950 px-3 py-1 rounded-md font-semibold text-lg"
+          className="flex items-center gap-2 border border-white-950 bg-white-50 hover:bg-white-100 active:bg-white-200 hover:duration-300 shadow-for-button transition-bg-smooth text-white-950 px-3 py-1 rounded-md font-semibold text-lg"
         >
           View All <Arrow className="w-4 h-4 fill-white-950" />
         </a>
@@ -39,7 +39,7 @@ export default function PostList() {
         {projects.slice(0, 3).map((project, idx) => (
           <li
             key={idx}
-            className="rounded-xl boxShadow-primary hover:brightness-75 transition overflow-hidden"
+            className="rounded-xl boxShadow-primary bg-white-200 hover:bg-white-300 active:bg-white-300 hover:duration-300 hover:brightness-75 transition overflow-hidden"
           >
             <a href="#">
               <figure className="h-80">
